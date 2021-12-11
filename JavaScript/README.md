@@ -21,3 +21,4 @@
 [19. 즉시 실행 함수](즉시실행함수.md)<br/>
 [20. 내부 함수](내부함수.md)<br/>
 [21. return 함수](return함수.md)<br/>
+[22. arguments](arguments.md)<br/>
