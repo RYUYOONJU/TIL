@@ -24,3 +24,7 @@
 [22. arguments](arguments.md)<br/>
 [23. 호출패턴과 this바인딩1](호출&this바인딩1.md)<br/>
 [    호출패턴과 this바인딩2](호출&this바인딩2.md)<br/>
+[    호출패턴과 this바인딩3](호출&this바인딩3.md)<br/>
+[    호출패턴과 this바인딩4](호출&this바인딩4.md)<br/>
+[24. 강제 instance](instance.md)<br/>
+[25. slice](slice.md)<br/>
