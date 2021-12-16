@@ -28,3 +28,4 @@
 [    호출패턴과 this바인딩4](호출&this바인딩4.md)<br/>
 [24. 강제 instance](instance.md)<br/>
 [25. slice](slice.md)<br/>
+[26. function return](functionReturn.md)<br/>
