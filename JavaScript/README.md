@@ -29,3 +29,4 @@
 [24. 강제 instance](instance.md)<br/>
 [25. slice](slice.md)<br/>
 [26. function return](functionReturn.md)<br/>
+[27. 프로토타입](prototype.md)<br/>
