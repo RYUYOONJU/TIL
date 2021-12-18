@@ -30,3 +30,5 @@
 [25. slice](slice.md)<br/>
 [26. function return](functionReturn.md)<br/>
 [27. 프로토타입](prototype.md)<br/>
+[28. 프로토타입 체이닝1](prototypeChaining.md)<br/>
+[    프로토타입 체이닝2](prototypeChaining2.md)<br/>
