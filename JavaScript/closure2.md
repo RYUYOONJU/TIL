@@ -80,7 +80,7 @@ var getCompletedStr = (function(){
         '. I\'m ',
         '',
         ' years old.',
-    ];
+    ]; //자유변수
 
     return (function(name, city, age){
         buffAr[1] = name;
@@ -88,9 +88,27 @@ var getCompletedStr = (function(){
         buffAr[5] = age;
 
         return buffAr.join('');
-    });
-})();
+    }); // 클로저
+})(); //생명주기가 끝난 함수
 
 var str = getCompletedStr('zzoon','seoul',16);
 console.log(str);
+```
+
+
+### 3. setTimeout()에 지정되는 함수의 사용자 정의
+```js
+function callLater(obj, a, b){
+    return(function(){
+        obj["sum"] = a + b;
+        console.log(obj["sum"]);
+    });
+}
+
+var sumObj = {
+    sum : 0
+}
+
+var func = callLater(sumObj, 1, 2);
+setTimeout(func,500);
 ```
