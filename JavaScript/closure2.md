@@ -43,3 +43,54 @@ var obj1 = new newObj(objHello, "zzoon");
 obj.func = saySomething(this, "who", name);
 
 ```
+
+### 2. 함수의 캡슐화
+"I'm XXX. I live in XXX. I'm XX years old"라는 문장을 출력하고 싶을때 XXX는 인자로 입력 받아 출력하는 함수를 만들어보자.
+```js
+var buffAr = [
+    'I am',
+    '',
+    '. I live in',
+    '',
+    '. I\'m ',
+    '',
+    ' years old.',
+];
+
+function getCompletedStr(name,city,age){
+    buffAr[1] = name;
+    buffAr[3] = city;
+    buffAr[5] = age;
+
+    return buffAr.join('');
+}
+
+var str = getCompletedStr('zzoon','seoul',16);
+console.log(str);
+```
+위 예제의 단점은 buffAr가 전역변수로 노출 되어 있어 다른 함수에서 쉽게 접근하여 배열을 바꿀 수 있다.
+
+```js
+var getCompletedStr = (function(){
+    var buffAr = [
+        'I am',
+        '',
+        '. I live in',
+        '',
+        '. I\'m ',
+        '',
+        ' years old.',
+    ];
+
+    return (function(name, city, age){
+        buffAr[1] = name;
+        buffAr[3] = city;
+        buffAr[5] = age;
+
+        return buffAr.join('');
+    });
+})();
+
+var str = getCompletedStr('zzoon','seoul',16);
+console.log(str);
+```
